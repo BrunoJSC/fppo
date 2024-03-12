@@ -4,14 +4,20 @@ import Link from "next/link";
 
 export function Header() {
   return (
-    <header className="w-full bg-[#282828] flex  pt-5">
+    <header className="w-full flex-col items-center bg-[#282828] flex  pt-5">
+      <Image
+        src="/FPPO.svg"
+        alt="Picture of the author"
+        width={50}
+        height={50}
+        className="w-[400px]"
+      />
       <nav className=" flex max-w-screen-xl mx-auto items-end align-end">
         {LINKS.map((link) => (
           <div
             className="flex flex-col  max-auto items-center max-w-lg mx-auto"
             key={link.href}
           >
-            <h2 className="text-5xl font-bold text-white">{link.word}</h2>
             <div>
               <Link
                 href={link.href}

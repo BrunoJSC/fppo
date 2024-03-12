@@ -8,11 +8,11 @@ export default function Contact() {
     <motion.section
       id="projects"
       layoutId="projects"
-      className="bg-[#5E5CE6] min-h-screen flex flex-col justify-center items-center space-y-10"
+      className="bg-[#5E5CE6] md:min-h-screen h-auto flex flex-col justify-center items-center space-y-10"
     >
-      <div className="flex justify-around items-center w-full">
-        <form className="flex flex-col space-y-5 w-[500px] border-4  border-white border-image-repeat p-4">
-          <h1 className="text-4xl text-white">Contact</h1>
+      <div className="flex md:flex-row flex-col justify-around items-center w-full">
+        <form className="flex flex-col space-y-5 w-full md:w-[500px] border-4 border-white border-image-repeat p-4">
+          <h1 className="text-2xl md:text-4xl text-white">Contact</h1>
           <input
             type="text"
             placeholder="Name"
@@ -25,12 +25,14 @@ export default function Contact() {
           />
           <textarea
             placeholder="Message"
-            className="p-2 border-4 border-white bg-transparent h-56 resize-none"
+            className="p-2 border-4 border-white bg-transparent h-56 md:h-auto resize-none"
           ></textarea>
-          <button className="bg-white text-[#5E5CE6] p-2">Submit</button>
+          <button className="bg-white text-[#5E5CE6] p-2 text-sm md:text-lg">
+            Submit
+          </button>
         </form>
 
-        <div className=" max-w-md flex flex-col space-y-9 p-4 text-white">
+        <div className="max-w-md flex flex-col space-y-5 md:space-y-9 p-4 text-white">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
             perferendis assumenda sunt nobis, quis tenetur voluptatibus maxime
